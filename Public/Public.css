@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+div{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.color_2cb{
+	color: #2cb1da;
+}
+.color_7d{
+	color: #7d7d7e;
+}
+.ofh{
+	overflow: hidden;
+}
+
+.flex{
+	display: -webkit-flex; /* Safari */
+  	display: flex;
+}
+.hidden{
+	display: none;
+}
+.fb{
+	font-weight:bold;
+}
+.f14{
+	font-size: 14px;
+}
+.f12{
+	font-size: 12px;
+}
+.f18{
+	font-size: 18px;
+}
+.f20{
+	font-size: 20px;
+}
+.border_bottom_2cb{
+	border-bottom: 4px solid #2cb1da;
+}
+.tac{
+	text-align: center;
+}
+.color_4a{
+	color: #4A4A4A;
+}

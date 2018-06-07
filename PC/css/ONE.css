@@ -1,0 +1,73 @@
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 3.25rem;
+	line-height: 3.25rem;
+	background-color: rgba(255,255,255,0.9);
+	z-index: 8;
+}
+.headImg{
+	width: 5.875rem;
+	height: 1.8rem;
+	background-image: url(../img/logo1.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	margin-top: 0.725rem;
+	margin-left: 15.3vw;
+}
+.nav{
+	font-size: 14px;
+	margin-right: 20vw;
+}
+.nav > div{
+	margin: 0 0.6rem;
+	cursor: pointer;
+}
+.downLoad{
+	position: fixed;
+	top: 0;
+	left: 80vw;
+	height: 4.21rem;
+	width: 3.9375rem;
+	background-image: url(../img/download2.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	z-index: 10;
+	cursor: pointer;
+	cursor: -ms-pointer;
+}
+.content{
+	position: relative;
+	width: 100%;
+	
+	height: 200vw;
+	background-image: url(../img/shouyeditu2.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.ios,.android{
+	position: absolute;
+	width: 11.5vw;
+	height: 4vw;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.ios{
+	background-image: url(../img/ios3.png);
+	top: 11.2vw;
+	right: 30.5vw;
+	
+}
+.android{
+	background-image: url(../img/android2.png);
+	top: 15.6vw;
+	right: 30.5vw;
+	cursor: pointer;
+	cursor: -ms-pointer;
+}
+
