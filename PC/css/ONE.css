@@ -25,6 +25,9 @@ header{
 	margin: 0 0.6rem;
 	cursor: pointer;
 }
+.nav > div:hover{
+	color: #2CB1DA;
+} 
 .downLoad{
 	position: fixed;
 	top: 0;

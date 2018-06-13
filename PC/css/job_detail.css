@@ -26,6 +26,9 @@ header{
 	cursor: pointer;
 	cursor: -ms-pointer;
 }
+.nav > div:hover{
+	color: #2CB1DA;
+} 
 .about{
 	position: relative;
 	margin-top: 3.25rem;

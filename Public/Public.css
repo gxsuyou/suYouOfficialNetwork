@@ -21,6 +21,9 @@ div{
 .color_7d{
 	color: #7d7d7e;
 }
+.color_white{
+	color: white;
+}
 .ofh{
 	overflow: hidden;
 }
@@ -55,4 +58,7 @@ div{
 }
 .color_4a{
 	color: #4A4A4A;
+}
+.text-indent{
+	text-indent: 2em;
 }
