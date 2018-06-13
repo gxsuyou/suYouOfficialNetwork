@@ -1,0 +1,168 @@
+header{
+	background-color: #7FCADF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 2.625rem;
+	line-height: 2.625rem;
+}
+.back{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 1.25rem;
+	margin-top: 0.46875rem;
+	background-image: url(../img/back.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.about{
+	width: 4rem;
+	height: 2rem;
+	line-height: 2rem;
+	
+	position: absolute;
+	top: 50%;
+	margin-top: -1rem;
+	left: 50%;
+	margin-left: -2rem;
+}
+.options{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 0.5625rem;
+	margin-right: 1.25rem;
+	background-image: url(../img/duoxuan.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.cancel{
+	background-image: url(../img/cha.png);
+}
+.shade{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 4;
+}
+.pop{
+	position: fixed;
+	top: 2.625rem;
+	width: 50%;
+	background-color: white;
+	right: -50%;
+	z-index: 5;
+	
+}
+.pop > div{
+	padding-left: 1.4rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+}
+
+.come{
+	animation: come 0.5s;
+	-webkit-animation:come 0.5s;
+	animation-fill-mode:forwards; 
+	-webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes come
+{
+    from {right: -50%;}
+    to {right: 0;}
+}
+ 
+@-webkit-keyframes come /* Safari 与 Chrome */
+{
+    from {right: -50%;}
+    to {right: 0;}
+}
+.go{
+	animation: go 0.5s;
+	-webkit-animation:go 0.5s;
+	animation-fill-mode:forwards; 
+	-webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes go
+{
+    from {right: 0;}
+    to {right: -50%;}
+}
+ 
+@-webkit-keyframes go /* Safari 与 Chrome */
+{
+    from {right: 0;}
+    to {right: -50%;}
+}
+
+.content{
+	margin-top: 4rem;
+	
+}
+.coo_title,.contact_title{
+	color: #000000;
+	margin-left: 0.4rem;
+	margin-bottom: 1rem;
+}
+.coo_mode,.contact_way{
+	border-bottom: 1px solid grey;
+	color: #3B3B3B;
+	padding: 0 1.125rem 1.625rem 1rem;
+	
+}
+.contact_way{
+	padding: 0 1.125rem 1rem 1rem;
+}
+.contact_title{
+	margin-top: 1.375rem;
+}
+.contact_contents{
+	width: 100%;
+	height: 5.75rem;
+	background-color: #CCCCCC;
+	padding: 1.375rem 0;
+	padding-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.advertisement{
+	padding: 1.5rem 0 0 1.4375rem;
+}
+
+
+footer{
+	margin-top: 2.5rem;
+	width:100%;
+	height: 8.125rem;
+	background-color: #7FCADF;
+}
+.bottom{
+	position: relative;
+	padding-top: 1.5rem;
+}
+.logo{
+	position: absolute;
+	top: 1.1875rem;
+	left: 2.375rem;
+	width: 4.375rem;
+	height: 2rem;
+	background-image: url(../img/logo1.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: contain;
+}
+.bottom_art{
+	/*margin-top: 1.5rem;*/
+	color: #666666;
+}
+.license{
+	margin-top: 0.625rem;
+}
+.num{
+	padding-top: 0.5rem;
+	
+}

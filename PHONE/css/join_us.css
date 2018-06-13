@@ -1,0 +1,144 @@
+header{
+	background-color: #7FCADF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 2.625rem;
+	line-height: 2.625rem;
+	z-index: 2;
+}
+.back{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: 1.25rem;
+	margin-top: 0.46875rem;
+	background-image: url(../img/back.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.about{
+	width: 4rem;
+	height: 2rem;
+	line-height: 2rem;
+	
+	position: absolute;
+	top: 50%;
+	margin-top: -1rem;
+	left: 50%;
+	margin-left: -2rem;
+}
+.options{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 0.5625rem;
+	margin-right: 1.25rem;
+	background-image: url(../img/duoxuan.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.shade{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 4;
+}
+.pop{
+	position: fixed;
+	top: 2.625rem;
+	width: 50%;
+	background-color: white;
+	right: -50%;
+	z-index: 5;
+	
+}
+.pop > div{
+	padding-left: 1.4rem;
+	height: 3.2rem;
+	line-height: 3.2rem;
+}
+
+.come{
+	animation: come 0.5s;
+	-webkit-animation:come 0.5s;
+	animation-fill-mode:forwards; 
+	-webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes come
+{
+    from {right: -50%;}
+    to {right: 0;}
+}
+ 
+@-webkit-keyframes come /* Safari 与 Chrome */
+{
+    from {right: -50%;}
+    to {right: 0;}
+}
+.go{
+	animation: go 0.5s;
+	-webkit-animation:go 0.5s;
+	animation-fill-mode:forwards; 
+	-webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+@keyframes go
+{
+    from {right: 0;}
+    to {right: -50%;}
+}
+ 
+@-webkit-keyframes go /* Safari 与 Chrome */
+{
+    from {right: 0;}
+    to {right: -50%;}
+}
+.cancel{
+	background-image: url(../img/cha.png);
+}
+
+.content{
+	width: 100%;
+	height: 168.5vw;
+	background-image: url(../img/zhaopinbeijing.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	background-size: cover;
+	margin-top: 2.625rem;
+	position: relative;
+}
+.position{
+	position: absolute;
+	top: 2.375rem;
+	left: 2.25rem;
+	background-color: #fff;
+	width: 6.625rem;
+	height: 2.375rem;
+	line-height: 2.375rem;
+	color: #6e6f70;
+	border: 1px solid #41c7db;
+	border-radius: 5px;
+	
+}
+.position_details{
+	position: absolute;
+	top: 7.375rem;
+	width: 100%;
+	padding: 0 2.8125rem;
+	 align-items: center;
+	 -webkit-justify-content: space-between;
+	justify-content: space-between;
+	flex-wrap:wrap;
+	
+}
+.position_detail{
+	width: 7.625rem;
+	height: 7.625rem;
+	line-height: 7.625rem;
+	background-color: #41c7db;
+	margin-bottom: 2.5rem;
+	border-radius: 50%;
+}
