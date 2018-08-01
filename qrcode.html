@@ -5,10 +5,13 @@
   </head>
   <body>
     <script type="text/javascript">
-      var navigator = navigator.userAgent.appVersion;
-      // .toLowerCase();
-      console.log(navigator);
-      // console.log(navigator.indexOf("android"));
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var checkiphone=sUserAgent.indexOf("iphone")
+        if(checkiphone!==-1){
+          location.href="https://fir.im/oneyouios";
+        }else{
+          location.href="https://fir.im/oneyouandroid";
+        }
     </script>
   </body>
 </html>
