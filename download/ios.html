@@ -32,7 +32,14 @@
 <script>
   var db=document.querySelector(".downloadButton");
   var loading=document.querySelector(".loading");
+  var ua = window.navigator.userAgent.toLowerCase();
   function download(){
+
+    if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
+        alert("微信QQ打开");
+        return false;
+    }
+
     location.href="itms-services://?action=download-manifest&url=https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
     this.style.display='none'
     loading.style.display='block'
