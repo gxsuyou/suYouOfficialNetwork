@@ -17,7 +17,7 @@
     <div class="downloadButton">
        下载安装
     </div>
-    <div class='loading'>&nbsp;</div>
+    <div class='loading' >&nbsp;</div>
     <div class="downloadInfo">
        <p>安装完成后</p>
        <p>打开    【 设置 】</p>
@@ -32,21 +32,22 @@
 <script>
   var db=document.querySelector(".downloadButton");
   var loading=document.querySelector(".loading");
- db.addEventListener("touchstart",function(){
-   // location.href="https://admin.oneyouxi.com.cn/www/download/gameId772.plist"
-   location.href="itms-services://?action=download-manifest&url=https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
-   this.style.display='none'
-   loading.style.display='block'
-   setTimeout(function(){
-     db.style.display='block';
-     db.style.background='transparent';
-     db.style.width="100%";
-     db.style.color="#7fcadf";
-     db.style.fontWeight=500;
-     db.style.fontSize="16px";
-     loading.style.display='none';
-     db.innerHTML="正在安装，请按 Home 键在桌面查看";
-   },2500);
- }, false);
+  function download(){
+    location.href="itms-services://?action=download-manifest&url=https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
+    this.style.display='none'
+    loading.style.display='block'
+    setTimeout(function(){
+      db.style.display='block';
+      db.style.background='transparent';
+      db.style.width="100%";
+      db.style.color="#7fcadf";
+      db.style.fontWeight=500;
+      db.style.fontSize="16px";
+      loading.style.display='none';
+      db.innerHTML="正在安装，请按 Home 键在桌面查看";
+      db.removeEventListener("touchstart",download,false);
+    },2500);
+  }
+ db.addEventListener("touchstart",download,false);
 </script>
 </html>

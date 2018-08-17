@@ -34,6 +34,7 @@ body{
 .simpleBrif>div:last-child{
   margin-top:2px;
 }
+
 .downloadButton{
   padding: 12px 46px;
   width:55%;
@@ -46,6 +47,10 @@ body{
   box-sizing:border-box;
   margin-top:4%;
 }
+
+
+
+
 .downloadInfo{
   width:62%;
   margin:0 auto;
