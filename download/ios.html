@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/ios.css" >
+  <title>稣游IOS下载页面</title>
+</head>
+<body>
+  <div class="main">
+    <div class="logo"></div>
+    <div class="simpleBrif">
+      <div>1.0.13 (Build 83) - 35.26 MB</div>
+      <div>更新于: 2018-08-08 17:56</div>
+    </div>
+    <div class="downloadButton">
+       下载安装
+    </div>
+    <div class='loading'>&nbsp;</div>
+    <div class="downloadInfo">
+       <p>安装完成后</p>
+       <p>打开    【 设置 】</p>
+       <p>点击    【 通用 】</p>
+       <p>进入    【 设备管理 】</p>
+       <p>点击查看并找到ONE游戏对应选项</p>
+       <p>点击蓝色的   【 <span>信任...</span> 】 选项</p>
+       <p>在弹框中选择 【 信任 】 即可</p>
+    </div>
+  </div>
+</body>
+<script>
+  var db=document.querySelector(".downloadButton");
+  var loading=document.querySelector(".loading");
+ db.addEventListener("touchstart",function(){
+   location.href="https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
+   this.style.display='none'
+   loading.style.display='block'
+   setTimeout(function(){
+     db.style.display='block';
+     db.style.background='transparent';
+     db.style.width="100%";
+     db.style.color="#7fcadf";
+     db.style.fontWeight=500;
+     db.style.fontSize="16px";
+     loading.style.display='none';
+     db.innerHTML="正在安装，请按 Home 键在桌面查看";
+   },2500);
+ }, false);
+</script>
+</html>
