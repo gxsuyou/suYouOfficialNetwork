@@ -16,8 +16,11 @@ $(function(){
 		window.location.href = page
 	})
 	$('.android').click(function(){
-		window.location.href = "http://www.oneyouxi.com.cn:8000/download?data=9"
+		window.location.href = "https://fir.im/oneyouandroid"
 	})
+	$('.ios').click(function() {
+	 	window.location.href = "https://fir.im/oneyouios"
+	});
 	$('.top').click(function(){
 		$("html,body").animate({scrollTop:0}, 500);
 	})
