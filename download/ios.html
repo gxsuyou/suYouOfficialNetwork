@@ -8,35 +8,49 @@
   <title>稣游IOS下载页面</title>
 </head>
 <body>
-  <div class="main">
-    <div class="logo"></div>
-    <div class="simpleBrif">
-      <div>1.0.13 (Build 83) - 35.26 MB</div>
-      <div>更新于: 2018-08-08 17:56</div>
+  <div class="main_wrap" >
+    <div class="main">
+      <div class="logo"></div>
+      <div class="simpleBrif">
+        <div>1.0.13 (Build 83) - 35.26 MB</div>
+        <div>更新于: 2018-08-08 17:56</div>
+      </div>
+      <div class="downloadButton">
+         下载安装
+      </div>
+      <div class='loading' >&nbsp;</div>
+      <div class="downloadInfo">
+         <p>安装完成后</p>
+         <p>打开    【 设置 】</p>
+         <p>点击    【 通用 】</p>
+         <p>进入    【 设备管理 】</p>
+         <p>点击查看并找到ONE游戏对应选项</p>
+         <p>点击蓝色的   【 <span>信任...</span> 】 选项</p>
+         <p>在弹框中选择 【 信任 】 即可</p>
+      </div>
     </div>
-    <div class="downloadButton">
-       下载安装
-    </div>
-    <div class='loading' >&nbsp;</div>
-    <div class="downloadInfo">
-       <p>安装完成后</p>
-       <p>打开    【 设置 】</p>
-       <p>点击    【 通用 】</p>
-       <p>进入    【 设备管理 】</p>
-       <p>点击查看并找到ONE游戏对应选项</p>
-       <p>点击蓝色的   【 <span>信任...</span> 】 选项</p>
-       <p>在弹框中选择 【 信任 】 即可</p>
-    </div>
+  </div>
+  <!-- 微信和QQ使用 -->
+  <div class="toAn_wrap" style="display:none;">
+     <div class='main'>
+       <div class="logo" style='margin-top:-20%;'></div>
+       <div class="simpleBrif" style="font-size:18px;font-weight:500;color:#2cb1da;margin-top:5%">
+         微信/QQ内无法下载应用
+       </div>
+     </div>
+     <div class="webtip"></div>
   </div>
 </body>
 <script>
   var db=document.querySelector(".downloadButton");
   var loading=document.querySelector(".loading");
+  var toan=document.querySelector(".toAn_wrap");
+  var main_wrap=document.querySelector('.main_wrap');
   var ua = window.navigator.userAgent.toLowerCase();
   function download(){
-
     if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
-        alert("微信QQ打开");
+        toan.style.display='flex';
+        main_wrap.style.display='none';
         return false;
     }
 
