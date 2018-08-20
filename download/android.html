@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/download.css" >
+  <title>稣游android下载页面</title>
+</head>
+<body>
+  <div class="main_wrap" style='background:url(./img/toan.jpg) no-repeat center /100% 100%;display:block;margin:0;padding-top:6%;box-sizing:border-box;' >
+    <div class="main">
+      <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;'></div>
+      <div class="simpleBrif" style='margin-top:14%;'>
+        <div>1.0.13 (Build 83) - 18.26 MB</div>
+        <div>更新于: 2018-08-08 17:56</div>
+      </div>
+      <div class="downloadButton">
+         下载安装
+      </div>
+      <div class='loading'>&nbsp;</div>
+    </div>
+  </div>
+  <!-- 微信和QQ使用 -->
+  <div class="toAn_wrap" style="display:none;">
+     <div class='main'>
+       <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;margin-top:-20%;'></div>
+       <div class="simpleBrif" style="font-size:18px;font-weight:500;color:#2cb1da;margin-top:5%">
+         微信/QQ内无法下载应用
+       </div>
+     </div>
+     <div class="webtip"></div>
+  </div>
+</body>
+<script>
+  var db=document.querySelector(".downloadButton");
+  var loading=document.querySelector(".loading");
+  var toan=document.querySelector(".toAn_wrap");
+  var main_wrap=document.querySelector('.main_wrap');
+  var ua = window.navigator.userAgent.toLowerCase();
+  function download(){
+    if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
+        toan.style.display='flex';
+        main_wrap.style.display='none';
+        return false;
+    }
+    location.href="http://admin.oneyouxi.com.cn/www/download/onegame.apk";
+    this.style.display='none'
+    loading.style.display='block'
+  }
+ db.addEventListener("touchstart",download,false);
+</script>
+</html>
