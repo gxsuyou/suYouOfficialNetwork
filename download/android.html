@@ -36,6 +36,7 @@
      <div class="webtip"></div>
   </div>
 </body>
+<script src="./js/ajax.js"></script>
 <script>
   var db=document.querySelector(".downloadButton");
   var loading=document.querySelector(".loading");
@@ -48,9 +49,26 @@
         main_wrap.style.display='none';
         return false;
     }
-    location.href="http://admin.oneyouxi.com.cn/www/download/onegame.apk";
+
     this.style.display='none'
     loading.style.display='block'
+    ajax({
+      type:"get",
+      url:"http://www.oneyouxi.com.cn:8877/common/getDownLoadUp?type=1&sys=2",
+      dataType:"json",
+      data:{"type":1,"sys":2},
+      beforeSend:function(){
+        //some js code
+     },
+     success:function(msg){
+        console.log(msg)
+     },
+     error:function(){
+        console.log("error")
+     }
+   })
+   location.href="http://admin.oneyouxi.com.cn/www/download/onegame.apk";
+
   }
  db.addEventListener("touchstart",download,false);
  document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';

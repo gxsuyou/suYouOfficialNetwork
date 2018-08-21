@@ -45,6 +45,7 @@
      <div class="webtip"></div>
   </div>
 </body>
+<script src="./js/ajax.js"></script>
 <script>
   var db=document.querySelector(".downloadButton");
   var loading=document.querySelector(".loading");
@@ -57,6 +58,23 @@
         main_wrap.style.display='none';
         return false;
     }
+
+    ajax({
+      type:"get",
+      url:"http://www.oneyouxi.com.cn:8877/common/getDownLoadUp?type=1&sys=1",
+      dataType:"json",
+      data:{type:1,sys:1},
+      beforeSend:function(){
+        //some js code
+     },
+     success:function(msg){
+        console.log(msg)
+     },
+     error:function(){
+        console.log("error")
+     }
+   })
+
     location.href="itms-services://?action=download-manifest&url=https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
     this.style.display='none'
     loading.style.display='block'
