@@ -13,12 +13,15 @@ body{
 }
 .main_wrap{
   height:100%;
-  background:url("../img/bg.jpg") no-repeat center /100% 100%;
+
+  /* background:url("../img/bg.jpg") no-repeat center /100% 100%; */
   display:flex;
   align-items:center;
 }
 .main{
   width:100%;
+  position: relative;
+  z-index:11;
 }
 .logo{
   width:106px;
@@ -32,7 +35,7 @@ body{
   font-size:14px;
   text-align:center;
   margin-top:10%;
-  color:#66828a;
+  color:#707c7f;
 }
 .simpleBrif>div:last-child{
   margin-top:2px;
@@ -101,8 +104,8 @@ border-right-color:transparent;
 /*toan*/
 .toAn_wrap{
   height:100%;
-  background:url('../img/toan.jpg') no-repeat
-  center /100% 100%;
+  /* background:url('../img/toan.jpg') no-repeat
+  center /100% 100%; */
   display:flex;
   align-items:center;
 }
@@ -115,4 +118,56 @@ border-right-color:transparent;
   height:67px;
   background:url('../img/webtip.png') no-repeat
   center /100% 100%;
+}
+
+
+
+
+
+
+/*安卓*/
+.android_left{
+    position:absolute;
+    width:3.95rem;
+    height:3.45rem;
+    top:0;
+    left:0;
+    background:url("../img/android_left-top.png") no-repeat center;
+    background-size:contain;
+    z-index:10;
+}
+
+.android_bottom{
+  width:100%;
+  height:5.52rem;
+  position:absolute;
+  bottom:0;
+  background:url("../img/android_bottom.png") no-repeat bottom ;
+  background-size:contain;
+  z-index:10;
+}
+
+.ios_left{
+  position:absolute;
+  top:0;
+  left:0;
+  width:3.44rem;
+  height:3.17rem;
+  background:url("../img/ios_left-top.png") no-repeat center;
+  background-size:contain;
+  z-index:10;
+}
+
+
+/*ios*/
+
+.ios_bottom{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:7.14rem;
+  background:url("../img/ios_bottom.png")
+  no-repeat bottom;
+  background-size:contain;
+  z-index:10;
 }

@@ -8,7 +8,9 @@
   <title>稣游IOS下载页面</title>
 </head>
 <body>
-  <div class="main_wrap" >
+  <div class="main_wrap">
+    <div class="ios_left"></div>
+    <div class="ios_bottom"></div>
     <div class="main">
       <div class="logo"></div>
       <div class="simpleBrif">
@@ -32,6 +34,8 @@
   </div>
   <!-- 微信和QQ使用 -->
   <div class="toAn_wrap" style="display:none;">
+    <div class="android_left"></div>
+    <div class="android_bottom"></div>
      <div class='main'>
        <div class="logo" style='margin-top:-20%;'></div>
        <div class="simpleBrif" style="font-size:18px;font-weight:500;color:#2cb1da;margin-top:5%">
@@ -53,7 +57,6 @@
         main_wrap.style.display='none';
         return false;
     }
-
     location.href="itms-services://?action=download-manifest&url=https://oneyouxi.com.cn/download/pack/oneyouxi.plist"
     this.style.display='none'
     loading.style.display='block'
@@ -70,5 +73,6 @@
     },2500);
   }
  db.addEventListener("touchstart",download,false);
+  document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
 </script>
 </html>

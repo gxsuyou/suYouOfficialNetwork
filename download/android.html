@@ -8,10 +8,12 @@
   <title>稣游android下载页面</title>
 </head>
 <body>
-  <div class="main_wrap" style='background:url(./img/toan.jpg) no-repeat center /100% 100%;display:block;margin:0;padding-top:6%;box-sizing:border-box;' >
-    <div class="main">
-      <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;'></div>
-      <div class="simpleBrif" style='margin-top:14%;'>
+  <div class="main_wrap" style='display:block;margin:0;box-sizing:border-box;'>
+    <div class="android_left"></div>
+    <div class="android_bottom"></div>
+    <div class="main" style='top:17%;'>
+      <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;margin-top:0px;'></div>
+      <div class="simpleBrif" style='margin-top:8%;'>
         <div>1.0.26 (Build 83) - 17.17 MB</div>
         <div>更新于: 2018-08-08 17:56</div>
       </div>
@@ -23,6 +25,8 @@
   </div>
   <!-- 微信和QQ使用 -->
   <div class="toAn_wrap" style="display:none;">
+    <div class="android_left"></div>
+    <div class="android_bottom"></div>
      <div class='main'>
        <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;margin-top:-20%;'></div>
        <div class="simpleBrif" style="font-size:18px;font-weight:500;color:#2cb1da;margin-top:5%">
@@ -49,5 +53,6 @@
     loading.style.display='block'
   }
  db.addEventListener("touchstart",download,false);
+ document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
 </script>
 </html>
