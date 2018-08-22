@@ -16,10 +16,10 @@ $(function(){
 		window.location.href = page
 	})
 	$('.android').click(function(){
-		window.location.href = "https://fir.im/oneyouandroid"
+		window.location.href = "https://oneyouxi.com.cn/download/android.html"
 	})
 	$('.ios').click(function() {
-	 	window.location.href = "https://fir.im/oneyouios"
+	 	window.location.href = "https://oneyouxi.com.cn/download/ios.html"
 	});
 	$('.top').click(function(){
 		$("html,body").animate({scrollTop:0}, 500);
