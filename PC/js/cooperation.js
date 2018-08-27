@@ -1,6 +1,6 @@
 $(function() {
 	$('.nav').children('div').eq(0).click(function(){
-		window.location.href = "ONE.html"
+		window.location.href = "/"
 	})
 	$('.nav').children('div').eq(1).click(function(){
 		window.location.href = "about_us.html"

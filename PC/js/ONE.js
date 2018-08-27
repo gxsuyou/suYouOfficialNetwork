@@ -19,12 +19,12 @@ $(function() {
 
 
 	$('.nav').children('div').eq(2).click(function() {
-		window.location.href = "about_us.html"
+		window.location.href = "PC/html/about_us.html"
 	})
 	$('.nav').children('div').eq(4).click(function() {
-		window.location.href = "cooperation.html"
+		window.location.href = "PC/html/cooperation.html"
 	})
 	$('.nav').children('div').eq(6).click(function() {
-		window.location.href = "join_us.html"
+		window.location.href = "PC/html/join_us.html"
 	})
 })
