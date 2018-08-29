@@ -27,4 +27,9 @@ $(function() {
 	$('.nav').children('div').eq(6).click(function() {
 		window.location.href = "PC/html/join_us.html"
 	})
+
+  $('.nav').children('div').eq(8).click(function(){
+    window.location.href = "PC/html/Product.html"
+  })
+
 })

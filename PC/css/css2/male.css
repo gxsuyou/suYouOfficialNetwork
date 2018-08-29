@@ -1,0 +1,237 @@
+/*平台首页*/
+.home_page{width:960px;position: relative;margin: 50px auto 13px auto;overflow:hidden;}
+.home_page .home_box_main{height:694px;border-bottom:1px solid #ddd;}
+.home_page .left_side{width:239px;border-right:1px #ddd solid;padding-bottom:0;margin-bottom:0;position:relative;z-index:1;overflow:hidden;float:left}
+/*.home_page .right_main{min-height:1080px;height:1080px;}*/
+.home_page .hot_gamelist .hot_tag{display:block}
+.home_page .good_gamelist .good_tag{display:block}
+/*轮播图*/
+.home_slide{width:520px;height:257px;overflow:hidden;position:relative;z-index:1;float:left;}
+.home_slide .slidehot{z-index:3;width:47px;height:46px;position:absolute;top:0px;left:0px;display:inline-block;overflow:hidden;background:url(/images/slide_hot.png) no-repeat;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/slide_hot.png");_background:none;}
+.home_slide .slidebox{width:520px;height:257px;position:relative;z-index:2;overflow:hidden}
+.home_slide .s_list{width:520px;height:257px;overflow:hidden;position:relative}
+.home_slide .s_list a{width:520px;height:225px;background-position:center center;background-repeat:no-repeat;position:absolute;left:0;top:0;filter:inherit;display:block}
+.home_slide .s_list img{width:520px;height:225px;}
+.home_slide .lr_arrow{width:15px;height:22px;display:block;border-width:13px 12px 13px 10px;border-color:black;border-style:solid;background-color:black;background-image:url(/images/slide_arrow.png);background-position:0px 0px;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=20);opacity:0.2;position:absolute;top:96px;z-index:3;display:none}
+.home_slide .lr_arrow:hover{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity:0.5}
+.home_slide .left_arrow{left:0}
+.home_slide .right_arrow{right:0;background-position:-18px 0px}
+.home_slide .btn{width:100%;height:30px;background:white;position:absolute;z-index:3;left:0;bottom:0;border-top:1px #ddd solid;border-bottom:1px #ddd solid}
+.home_slide .btn li{display:inline}
+.home_slide .btn a{width:20%;height:30px;line-height:30px;text-align:center;color:#565656;border-right:1px #ddd solid;margin-right:-1px;overflow:hidden;float:left;position:relative;z-index:2;}
+.home_slide .btn a:hover{background:#f6f6f6;text-decoration:none;z-index:1}
+.home_slide .btn .activeSlide a{background:#f1f1f1;position:relative;color:#d72226;font-weight:bold;z-index:1}
+/*右侧猜你喜欢*/
+.home_like{width:199px;height:256px;_height:255px;overflow:hidden;position:relative;z-index:1;float:right;border-left:1px #ddd solid;border-bottom:1px #ddd solid}
+.home_like .like_game_box{margin-bottom:8px;}
+.home_like .like_game_box .like_game_list{height:45px;overflow:hidden;padding:7px 0;background:url(/images/x_dotted.png) left bottom repeat-x}
+.home_like .like_game_box .like_game_img{width:90px;height:45px;display:block;overflow:hidden;float:left}
+.home_like .like_game_box .like_game_img img{width:90px;height:45px}
+.home_like .like_game_box .like_game_name{width:64px;padding:12px 0 0 10px;color:#565656;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;float:left;}
+.home_like .like_bottom_game{width:168px;height:78px;display:block;overflow:hidden;float:left}
+.home_like .like_bottom_game img{width:168px;height:78px}
+/*主推游戏*/
+.hotgame_fine_box{width:688px;float:right;padding:0 16px;_overflow-x:hidden;}
+.hotgame_fine_box .tag_box{margin-bottom:0}
+.hotgame_fine_box .hotgame_box{width:704px;height:200px;padding-top:16px;position:relative;z-index:6;}
+.hotgame_fine_box .hotgame_box .fine_list{position:relative;width:334px;height:190px;border:1px #ddd solid;margin:0 16px 16px 0;_display:inline;float:left;}
+.hotgame_fine_box .hotgame_box .fine_list .tag_a{position:absolute;top:-1px;z-index:2;left:300px}
+.hotgame_fine_box .hotgame_box .current{position:relative;border-color:#ff994f;box-shadow:10px 10px 20px rgba(0,0,0,0.14);z-index:11}
+.hotgame_fine_box .hotgame_box .current .title .name{color:#ff5d13}
+.hotgame_fine_box .hotgame_box .game_img{width:330px;height:154px;float:left;overflow:hidden;padding:2px;}
+.hotgame_fine_box .hotgame_box .game_img .img{width:330px;height:154px;display:block;overflow:hidden;position:relative;}
+.hotgame_fine_box .hotgame_box .game_img .img img{width:330px;height:154px}
+.hotgame_fine_box .hotgame_box .game_img .gameintro_box{width:280px;height:115px;padding:10px 10px 0;overflow:hidden;position:absolute;left:15px;bottom:-125px;background:rgba(255,255,255,0.95);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#5ffffff',endColorstr='#5ffffff');}
+.hotgame_fine_box .hotgame_box .game_img .gameintro_box .intro_btn{float:right;text-decoration:none;}
+.hotgame_fine_box .hotgame_box .game_img .gameintro_box .intro_title{font-size:16px;font-weight:bold;text-decoration:none;}
+.hotgame_fine_box .hotgame_box .game_img .gameintro_box .intro_content{float:left;line-height:22px;width:280px;font-size:14px;line-height:1.8;padding-top:2px;overflow:hidden;text-decoration:none;}
+.hotgame_fine_box .hotgame_box .gameinfo_box{width:330px;height:30px;float:left;_overflow:hidden;padding:0 2px;}
+.hotgame_fine_box .hotgame_box .gameinfo_box .title{float:left;height:30px;line-height:30px;font-size:14px;margin-left:12px;}
+.hotgame_fine_box .hotgame_box .gameinfo_box .title a{color:#363636}
+.hotgame_fine_box .hotgame_box .gameinfo_box .title a:hover{color:#ff5d13}
+.hotgame_fine_box .hotgame_box .gameinfo_box .playbtn{float:right;margin-top:2px;margin-right:5px;}
+.hotgame_fine_box .hotgame_box .gameinfo_box .playbtn .home_btn{float:right;white-space:nowrap;height:24px;line-height:24px;font-size:14px;padding:0 10px;display:inline-block;vertical-align:middle;*vertical-align:auto;*zoom:1;*display:inline;margin-right:5px;border-width:1px;border-style:solid;border-radius:2px;}
+.hotgame_fine_box .hotgame_box .gameinfo_box .playbtn .miniplay_btn{float:right;}
+/*更多游戏*/
+.more_game_box{padding:0 0 16px 16px;position:relative;z-index:5}
+.more_game_box .game_list{width:218px;height:108px;border:1px #ddd solid;margin:0 14px 16px 0;position:relative;float:left}
+.more_game_box .game_list{transition: all 0.2s ease-out 0s;}
+.more_game_box .game_list .tag_a{position:absolute;top:-1px;left:186px}
+.more_game_box .game_list:hover .img {left: -30px;}
+.more_game_box .current{position:relative;border-color:#ff994f;box-shadow:10px 10px 20px rgba(0,0,0,0.14);z-index:11}
+.more_game_box .current .title .name,.more_game_box .current .info_list{color:#ff5d13}
+.more_game_box .game_img{width:103px;height:108px;position:absolute;left:0;top:0;z-index:1;overflow:hidden;float:left;}
+.more_game_box .game_list .img{width:140px;height:110px;position:absolute;left:-40px;top:-2px}
+.more_game_box .game_list .img {transition: all 0.2s ease-out 0s;}
+.more_game_box .game_list .img img{width:140px;height:110px}
+.more_game_box .game_info{width:115px;padding:16px 0;color:#565656;position:relative;float:right}
+.more_game_box .title{height:18px;line-height:18px;font-size:14px;padding-bottom:4px}
+.more_game_box .title a{color:#363636}
+.more_game_box .title a:hover{color:#ff5d13}
+.more_game_box .info_box{padding-bottom:8px}
+.more_game_box .info_list{height:20px;line-height:20px}
+.more_game_box .info_list .name{color:#979797;float:left}
+.more_game_box .info_list .mini_star_box{float:left;margin:4px 0}
+.more_game_box .game_more{float:left;color:#888;}
+/*左侧登录*/
+.left_side .side_login{border-bottom:1px solid #ddd;overflow:hidden;position:relative}
+.left_side .loginbox{width:207px;padding:16px 0;margin:0 16px;position:relative;z-index:3;}
+.left_side .loginbox .form_list{width:100%;padding-bottom:12px;position:relative;z-index:10}
+.left_side .loginbox .input_box{position:relative;z-index:11;float:left;margin-right:-20px}
+.left_side .loginbox .input_tip{height:32px;line-height:32px}
+.left_side .loginbox .input_w1{width:165px}
+.left_side .loginbox .input_w2{width:55px}
+.left_side .loginbox .input_txt{padding-left:34px}
+.left_side .loginbox .img_code{width:100px;height:32px;margin-right:0;float:right}
+.left_side .loginbox .img_code img{width:100px;height:32px}
+.left_side .loginbox .icon_box{width:28px;height:30px;display:inline-block;overflow:hidden;background:#f1f1f1;border-right:1px #cecece solid;position:absolute;top:1px;left:1px;z-index:30}
+.left_side .loginbox .icon_box .icon16{margin:7px 6px}
+.left_side .loginbox .auto_login{height:20px;line-height:20px;color:#565656}
+.left_side .loginbox .auto_login .auto_login_l{float:left}
+.left_side .loginbox .auto_login .forget{float:right}
+.left_side .loginbox .auto_login .checkbox_a{height:20px;line-height:20px;float:left}
+.left_side .loginbox .auto_login .fui_checkbox{margin:2px 4px 2px 0}
+.left_side .loginbox .submit{font-size:14px;border:0;background:#ff5d13;color:white;border-radius:2px;width:100%;height:36px;line-height:36px}
+.left_side .loginbox .with_other_login{height:56px;}
+.left_side .loginbox .with_other_login .no_background{background:none;}
+.left_side .loginbox .with_other_login li{float:left;position:relative;padding-left:15px;width:88px;height:28px;line-height:28px;background:url(/images/x_dotted.png) left bottom repeat-x}
+.left_side .loginbox .with_other_login .line{height:28px;background:url(/images/y_dotted.png) -1px 0px repeat-y;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=10);opacity:0.1;position:absolute;right:0px;top:0px;margin:0 auto}
+.left_side .loginbox .with_other_login a{color:#565656;float:left}
+.left_side .loginbox .with_other_login a .icon16{margin:6px 0;margin-right:3px;float:left}
+.left_side .loginbox .with_other_login a .name{float:left}
+.left_side .userinfo_box{width:206px;margin:16px 16px 0 16px;color:#565656;position:relative;z-index:3}
+.left_side .userinfo_box .avatar_info{height:59px;background:url(/images/x_dotted.png) left bottom repeat-x;padding-bottom:2px;}
+.left_side .userinfo_box .avatar_info .name{font-size:14px;padding-bottom:2px}
+.left_side .userinfo_box .avatar_info .avatar{width:48px;height:48px;overflow:hidden;text-align:center;border-radius:50%;border:1px solid #ddd;padding:1px;float:left;}
+.left_side .userinfo_box .avatar_info .avatar img{width:48px;height:48px;border-radius:50%;}
+.left_side .userinfo_box .avatar_info .userbase_box{padding-left:14px;color:#565656;float:left}
+.left_side .userinfo_box .avatar_info .userbase_box .user_name{position:absolute;width:78px;text-overflow: ellipsis;white-space:nowrap;overflow:hidden;display:block}
+.left_side .userinfo_box .avatar_info .userbase_box .sign_box{position:absolute;top:0;right:0;margin: 0 auto;}
+.left_side .userinfo_box .avatar_info .userbase_box .sign_box .minibutton_a{margin:0;}
+.left_side .userinfo_box .avatar_info .userbase_box .sign_box .sign_icon_btn{position:absolute;top:5px;left:5px;width:16px;height:16px;background-position:0px -88px;}
+.left_side .userinfo_box .avatar_info .userbase_box .sign_box .name{font-size:12px;margin-left:15px;}
+.left_side .userinfo_box .avatar_info .userbase_box .vipicon_box{position:absolute;margin-top:20px;height:20px;}
+.left_side .userinfo_box .avatar_info .userbase_box .vipicon_box .vip_grade{margin:4px 0 3px 0;float:left}
+.left_side .userinfo_box .avatar_info .userbase_box .link_box{position:absolute;margin-top:40px;height:20px;line-height:20px}
+.left_side .userinfo_box .avatar_info .userbase_box .link_box .link_list{display:line;padding-right:17px;position:relative;float:left}
+.left_side .userinfo_box .avatar_info .userbase_box .link_box .link_list .line{height:12px;background:url(/images/y_dotted.png) -1px 0px repeat-y;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=30);opacity:0.3;position:absolute;top:5px;right:8px}
+.left_side .userinfo_box .avatar_info .userbase_box .link_box .link_list .link{float:left}
+.left_side .userinfo_box .user_info{height:72px;background:url(/images/x_dotted.png) left bottom repeat-x;padding:2px 0;}
+.left_side .userinfo_box .user_info .name{float:left}
+.left_side .userinfo_box .user_info .info_list{height:24px;line-height:24px}
+.left_side .userinfo_box .user_info .number{color:#565656;margin-right:5px}
+.left_side .userinfo_box .user_info .game_oof{color:#ff5d13}
+.left_side .userinfo_box .user_info .msg_number{padding:1px 5px;border-radius:5px;background:#565656;color:white}
+.left_side .userinfo_box .user_info .safe_level_bar{margin:8px 0}
+.left_side .userinfo_box .history_info{height:96px;z-index:5;padding:2px 0 5px;}
+.left_side .userinfo_box .history_info .playedbox{display:none}
+.left_side .userinfo_box .history_info .playedbox .p_lsit{height:24px;line-height:24px;overflow:hidden}
+.left_side .userinfo_box .lc{width:80%;float:left}
+/*左侧最新开服*/
+.left_side .side_kaifu{border-bottom:1px solid #ddd;float:left;overflow:hidden;position:relative;width:239px;}
+.left_side .side_kaifu .kaifu_tab{margin-bottom:0px;}
+.left_side .side_kaifu .kaifu_tab .menu_list{padding-right:15px;font-size:14px;font-weight:bold;}
+.left_side .side_kaifu .kaifu_tab .menu_list .line{right:6px;}
+.left_side .side_kaifu .kaifu_tab .menu_list_noright{padding-right:0px;}
+.left_side .side_kaifu .kaifu_con {overflow:hidden;}
+.left_side .side_kaifu .kaifu_con .game_list{height:40px;padding:6px 0 7px;background:url(/images/x_dotted.png) left bottom repeat-x;position:relative;z-index:2}
+.left_side .side_kaifu .kaifu_con .game_list{-moz-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;-webkit-transition:all 0.2s ease-out;transition:all 0.2s ease-out}
+.left_side .side_kaifu .kaifu_con .game_list:hover{padding-left:5px}
+.left_side .side_kaifu .kaifu_con .game_icon{width:40px;height:40px;overflow:hidden;float:left}
+.left_side .side_kaifu .kaifu_con .game_icon img{width:40px;height:40px}
+.left_side .side_kaifu .kaifu_con .game_info{position:relative;height:40px;padding-left:6px;overflow:hidden}
+.left_side .side_kaifu .kaifu_con .game_info .g_name .name{float:left;padding-right:5px;}
+.left_side .side_kaifu .kaifu_con .game_info .g_name .name:hover{text-decoration:none}
+.left_side .side_kaifu .kaifu_con .game_info .g_name .p1_ico{margin:2px 0;float:left}
+.left_side .side_kaifu .kaifu_con .game_info .g_time{float:left;width:120px;color:#888;overflow:hidden}
+.left_side .side_kaifu .kaifu_con .button_box{width:50px;height:52px;border-right:70px white solid;position:absolute;z-index:5;top:0;right:0;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:rgba(255,255,255,0);background:-moz-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 100%);background:-webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, #fff));background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 100%);background:-o-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 100%);background:-ms-linear-gradient(left, rgba(255,255,255,0) 0%, #fff 100%);background:linear-gradient(to right, rgba(255,255,255,0) 0%,#ffffff 100%);display:none;filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fffffe', endColorstr='#fffffe',GradientType=0 )}
+.left_side .side_kaifu .kaifu_con .button_box .minibutton_a{margin-right:0;padding:0 6px;position:absolute;right:-70px;top:14px}
+.left_side .side_kaifu .kaifu_con .current .button_box{display:block}
+.left_side .side_kaifu .kaifu_con .gl_end{z-index:1;}
+.left_side .side_kaifu .page_box {float:left;padding-left:70px;height:30px;overflow:hidden;}
+.left_side .side_kaifu .page_box .last_next{width:auto;margin:7px 0;}
+.left_side .side_kaifu .page_box .page_number{padding:0 10px;}
+/*右侧推荐游戏*/
+.ranking_game{float:left;overflow:hidden;position:relative;z-index:3;width:239px;}
+.ranking_game .title{height:28px;line-height:28px;font-size:14px;padding-top:8px;font-weight:bold;color:#ff5d13;border-bottom:2px #ff5d13 solid;margin-bottom:2px}
+.ranking_game .menu{display:block;overflow:hidden}
+.ranking_game .menu .hot{text-decoration:none}
+.ranking_game .mini_number{margin:11.5px 0 0 5px;float:left}
+.ranking_game .game_list{height:36px;line-height:36px;padding-bottom:1px;background:url(/images/x_dotted.png) left bottom repeat-x}
+.ranking_game .game_list .name{color:#363636;margin-left:5px;float:left}
+.ranking_game .game_list .hot{float:right;color:#888;margin-right:5px}
+.ranking_game .game_list .hot .num{color:#ff5d13;font-weight:normal;}
+.ranking_game .game_list .type .server{color:#ff5d13;font-weight:normal;text-decoration:none;}
+.ranking_game .game_list .game_icon,.ranking_game .game_list .type{display:none}
+.ranking_game .current{height:50px;padding:6px 0;position:relative}
+.ranking_game .current .menu .type{text-decoration:none}
+.ranking_game .current .game_icon{width:50px;height:50px;float:left;margin-left:5px}
+.ranking_game .current .name{font-size:12px;font-weight:bold;color:#ff5d13;position:absolute;left:60px;top:4px}
+.ranking_game .current .type{color:#888;position:absolute;top:22px;left:65px}
+.ranking_game .current .hot,.ranking_game .current .mini_number{display:none}
+.ranking_game .current .game_icon,.ranking_game .current .type{display:inline}
+.ranking_game .last{background:none;}
+/*首页底部*/
+.home_box_bottom{height:240px;overflow:hidden}
+.home_box_bottom .part_b .title_box{margin-bottom:4px}
+.home_box_bottom .row1,.home_box_bottom .row2,.home_box_bottom .row3{width:359px;padding-bottom:999px;margin-bottom:-999px;border-right:1px #ddd solid;float:left}
+.home_box_bottom .row1{width:239px;}
+.home_box_bottom .row3{width:360px;border-right:none;}
+.home_box_bottom .row1 .side_help li{height:34px;line-height:34px;overflow: hidden;}
+.home_box_bottom .row1 .side_help li .lc{float:left;width:65px;}
+.home_box_bottom .row1 .side_help li .rc{float:left;}
+.home_box_bottom .row1 .side_help li .tel_number{font-size:14px;font-weight:bold;color:#565656}
+.home_box_bottom .article_tab{margin-bottom:0px;}
+.home_box_bottom .article_tab .menu_list{padding-right:15px;font-size:14px;font-weight:bold;}
+.home_box_bottom .article_tab .menu_list .line{right:6px;}
+.home_box_bottom .article_box .news_list{height:37px;line-height:37px;padding-bottom:1px;background:url(/images/x_dotted.png) left bottom repeat-x}
+.home_box_bottom .article_box .news_list .item{width:60px;text-align:center;padding:0 5px;margin:7px 10px 0 0;height:24px;line-height:24px;float:left;background:#ff5d13;color:white}
+.home_box_bottom .article_box .news_list .item a{color:white}
+.home_box_bottom .article_box .title{width:200px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.home_box_bottom .article_box a.title{color:#565656;float:left}
+.home_box_bottom .article_box a.title:hover{color:#ff5d13}
+.home_box_bottom .article_box .sort_name{margin-right:5px}
+.home_box_bottom .article_box .date{color:#888;float:right;padding-right:6px}
+
+/*友情链接*/
+.link_main{width:960px;position:relative;margin:15px auto;overflow:hidden;}
+.link_main .title_box {height:32px;line-height:32px;border:1px solid #ddd;position:relative;}
+.link_main .title_box .title_name{padding:0 15px;border-right:1px #ddd solid;float:left;color:#626262;text-decoration:none;border-bottom:1px white solid;position:relative;margin-bottom:-1px;}
+.link_main .title_box .title_more{float:right;color:#888;margin-right:16px;}
+.link_main .link_con{position:relative;height:48px;padding:2px 4px;border:1px solid #ddd;border-top:none;overflow:hidden;}
+.link_main .link_con li{float:left;display:inline;position:relative;margin-right:-1px;_margin-right:-2px;}
+.link_main .link_con li a{float:left;display:inline;text-align:center;line-height:24px;height:24px;width:88px;color:#999;padding:0 4px;overflow:hidden;}
+.link_main .link_con li .line{height:12px;background:url(/images/y_dotted.png) -1px 0px repeat-y;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=10);opacity:0.1;position:absolute;right:0px;top:7px;margin:0 auto}
+.link_main .link_arrow a{background:url(/images/links_arrow.png) no-repeat scroll 0 0 transparent;border:1px solid #ddd;border-top:none;display: block;font-size:0;text-indent:-9999px;height:13px;width:30px;margin:0 auto;overflow:hidden;}
+.link_main .link_arrow a.icon_link_on{background-position: 10px 3px;}
+.link_main .link_arrow a.icon_link_off{background-position: -15px 3px;}
+
+/*友情链接页面*/
+.link_page{width:960px;position: relative;margin:15px auto;overflow:hidden;}
+.link_page .left_side{width:239px;border-right:1px #ddd solid;padding-bottom:9999px;margin-bottom:-9999px;position:relative;z-index:1;overflow:hidden;float:left}
+.link_page .left_side .contact_box{padding-top:10px;color:#565656;line-height:20px;}
+.link_page .left_side .contact_box .tip{color:#888;margin-bottom:10px}
+.link_page .left_side .linktext_box{padding-top:10px;color:#565656;line-height:30px;}
+.link_page .left_side .linktext_box img{border:1px solid #ccc;}
+.link_page .left_side .linktext_box .linkname{font-weight:bold;font-size:18px;}
+.link_page .left_side .linktext_box .tip{color:#888;margin-bottom:10px}
+.link_page .right_main .link_main{margin:0 16px 15px;width: 688px;}
+.link_page .right_main .link_main .link_content li{float:left;width:129px;height:28px;text-align:center;line-height:28px;background:#fefaf1;border:1px dashed #ff5d13;margin:0px 3px 10px;overflow:hidden;}
+
+/*关于我们页面*/
+.about_page{width:960px;position: relative;margin:15px auto;overflow:hidden;}
+.about_page .left_side{width:179px;min-height:380px;border-right:1px #ddd solid;padding-bottom:9999px;margin-bottom:-9999px;position:relative;float:left}
+.about_page .left_side .side_menu{margin-bottom:20px;margin-top:-1px}
+.about_page .left_side .side_menu .menu_list{height:40px;line-height:40px;background:white;padding:0 10px 0 30px;border:1px white solid;border-left:none;border-right:none;margin-bottom:1px}
+.about_page .left_side .side_menu .menu_list .name{float:left;padding-right:4px}
+.about_page .left_side .side_menu .menu_list .icon16{margin:12px 0;float:left}
+.about_page .left_side .side_menu .menu{color:#565656;float:left}
+.about_page .left_side .side_menu .menu:hover{color:#ff5d13}
+.about_page .left_side .side_menu .current{margin-right:-1px;border-color:#ddd;position:relative}
+.about_page .right_main{width:740px;float:right;padding:0 20px 10px 0px;}
+.about_page .right_main .article {overflow:hidden}
+.about_page .right_main .article .title {text-align:center;font-size: 18px;font-weight: bold;line-height:34px;padding-top:10px;}
+.about_page .right_main .article .note{height:15px;position:relative;padding-bottom:5px;background:url(/images/x_dotted.png) left bottom repeat-x}
+.about_page .right_main .article .content {color:#565656;font-size:14px;line-height:24px;overflow:hidden;padding:15px 0;}
+.about_page .right_main .article .content img{max-width: 100%; width:expression(this.width > 740 ? "740px":this.width ); height:auto;}
+.about_page .right_main .article .content table,.about_page .right_main .article .content tr,.about_page .right_main .article .content th,.article_box .right_main .article .content td{border: 1px solid;}

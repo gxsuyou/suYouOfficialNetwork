@@ -1,0 +1,167 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8" />
+    <title>广西南宁麻将|棋牌游戏开发公司|手机棋牌游戏开发|房卡麻将开发</title>
+	<link rel="stylesheet" href="../css/css2/inner.min.css">
+	<link rel="stylesheet" href="../css/css2/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/css2/cssq/style.css">
+	<script src="../js/Js/jquery.min.js"></script>
+	<script src="../js/Js/inner.min.js"></script>
+	<script src="../js/Js/jsq/lrtk.js"></script>
+</head>
+
+<body style="background: #eff2f4;">
+    ﻿<!-- WPA Button Begin -->
+    <script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php"></script>
+    <!-- WPA Button End -->
+
+
+    <header>
+        <div class="box">
+            <a href="" title="棋牌游戏制作"><img src="../img/logo1.png?v01" alt="稣游网络出品" style="width:100%"/></a>
+            <div class="wechat">
+                <img src="../img/qrcode.png" alt="扫描棋牌游戏开发微信公众账号" class="wechat" /><p>扫一扫二维码下载<i></i></p>
+            </div>
+            <nav style="margin-right: 26px;">
+            <ul>
+            <li><a href="/">首页</a></li>
+            </ul>
+            </nav>
+
+            <footer>
+                高端定制，品牌设计<br /><u>2009-2018</u>棋牌游戏开发<br /><a href="" target="_blank">稣游网络</a>
+            </footer>
+
+        </div>
+
+    </header>
+
+
+    <section class="toolbar">
+        <a href="" title="返回首页" class="homelink"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <span class="switch glyphicon glyphicon-th-list"></span>
+        <div class="btnList">
+            <div class="link btn-group ml">
+                <a href="" class="btn btn-default" title="网络作品集">作品集</a>
+            </div>
+            <div class="link btn-group">
+                <a href="" class="btn btn-default"><span class="glyphicon glyphicon-arrow-left"></span>PREV</a>
+            </div>
+            <div class="link btn-group">
+                <a href="" class="btn btn-default">NEXT<span class="glyphicon glyphicon-arrow-right"></span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="caseshow content">
+
+        <div class="caption">支付宝充值</div>
+
+        <div class="demo">
+            <div style="text-align: center;">
+                <span style="font-size:16px;">
+
+<li class="form alipay " data-paytype="alipay" style="padding-top:50px; padding-bottom:50px">
+
+    <div class="mod-line uc-number">
+        <label>充值 稣游 账号: </label>
+        <input type="text"
+               value=""
+               class="ucnumber must-input long-input">
+        <span class="err-tips" style="color: red;">请输入充值账号</span>
+    </div>
+	<br/>
+    <div class="mod-line copy-number ">
+        <label>重复输入账号:</label>
+        <input type="text"
+               value=""
+               class="ucnumber must-input long-input">
+        <span class="err-tips" style="color: red;">请确认充值账号</span>
+    </div>
+
+    <div class="mod-line">
+        <input type="hidden" value="10" class="exRate"/>
+        <p>充值U点数量：（1元=10U点）</p>
+        <ul class="mod-list upay-list">
+
+                <li class="else ">
+                    <div class="list-wrap">
+                        <span class="name">充值数量</span>
+                        <input type="text" class="else-input" maxlength="7" >
+						   <span class="err-tips" style="color: red;">规则:(1元 = 10游点)</span>
+
+                    </div>
+                </li>
+
+        </ul>
+        <input type="hidden" class="upayValue must-input" value="100">
+         <span class="err-tips hide upay_empty_tips">请选择充值U点数量</span>
+    </div>
+   <br/>
+
+    <!-- 同意协议 -->
+    <div class="mod-line checkbox-wrap agree-wrap">
+        <label><input type="checkbox" >
+        确认充值</label>
+        <span class="err-tips"
+              ></span>
+    </div>
+	<br/>
+    <button style="background-color: yellow;width:150px;height:50px;color:#0042c9;font-weight:bold"> 立即充值 </button>
+
+</li>
+
+                </span>
+            </div>
+
+        </div>
+    </section>
+    ﻿    <div class="dock">
+        <ul class="icons">
+            <li class="up"><i></i></li>
+            <li class="tel">
+                <i></i><p>咨询热线<br />15177183193</p>
+            </li>
+            <li class="im">
+                <i></i><p><a href="http://wpa.qq.com" target="_blank">咨询在线客服</a></p>
+            </li>
+            <li class="wechat">
+                <i></i><p><img src="" alt="扫描棋牌游戏开发微信公众账号" /></p>
+            </li>
+            <li class="down"><i></i></li>
+        </ul>
+        <a class="switch"></a>
+    </div>
+
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        var myurl = GetQueryString("pro");
+        var U = unescape(name);
+        if (myurl != null && myurl.toString().length > 1) {
+            var p1 = " /images/jiesao/" + myurl + "1.png";
+            var p2 = " /images/jiesao/" + myurl + "2.png";
+            var p3 = " /images/jiesao/" + myurl + "3.png";
+            $("#pronet1").attr("src", p1);
+            $("#pronet2").attr("src", p2);
+            $("#pronet3").attr("src", p3);
+
+            var name = GetQueryString("na");
+            $("#game").text(name);
+        }
+    })
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return decodeURI(r[2]);
+        } else {
+            return null;
+        }
+    }
+</script>
