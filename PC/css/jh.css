@@ -143,17 +143,17 @@ a {
     font-size: 12px;
 }
 
-.content-left-nav li.nav-li1 a.active {
+.content-left-nav li.nav-li1 a.active, .content-left-nav li.nav-li1 a:hover {
     background: url(../img/jh_nav2.png) no-repeat -1px 0 !important;
 }
 
-.content-left-nav li.nav-li2 a.active {
+.content-left-nav li.nav-li2 a.active, .content-left-nav li.nav-li2 a:hover {
     background: url(../img/jh_nav2.png) no-repeat -1px -95px !important;
 }
 
 .content-right-con {
     float: right;
-    width: 710px;
+    width: 720px;
     min-height: 550px;
     background: white;
     -moz-box-shadow: 0px 1px 5px #666;
@@ -162,11 +162,11 @@ a {
     font-size: 14px;
 }
 
-.con-1, .con-2 {
+.con-0, .con-1, .con-2 {
     padding: 0 15px;
 }
 
-.con-1 h3, .con-2 h3 {
+.con-0 h3, .con-1 h3, .con-2 h3 {
     text-align: center;
     font-size: 24px;
     color: #0171c1;
