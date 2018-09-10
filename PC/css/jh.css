@@ -1,0 +1,204 @@
+body {
+    background: rgb(226, 226, 226);
+    margin: 0 auto;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    display: inline-block;
+    background: url(../img/jh_header.jpg) no-repeat top center;
+    margin-bottom: 20px;
+}
+
+.header-top {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.header-logo img {
+    height: 45px;
+}
+
+.header-img {
+    width: 100%;
+    text-align: center;
+}
+
+.header-img img {
+    height: 75px;
+}
+
+.header-content {
+    width: 100%;
+    /*height: 170px;*/
+    margin-top: 30px;
+    display: inline-block;
+    background: rgb(242, 242, 242);
+    -moz-box-shadow: 0px 1px 5px #666;
+    -webkit-box-shadow: 0px 1px 5px #666;
+    box-shadow: 0px 1px 5px #666;
+}
+
+.h-c {
+    width: 95%;
+    padding: 15px 2.5%;
+}
+
+.header-content p {
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+}
+
+.header-content p a {
+    color: #ff6600;
+}
+
+/*内容*/
+.content {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.content .content-con {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content-left-nav {
+    float: left;
+    width: 225px;
+    min-height: 400px;
+    padding: 10px 15px;
+    background: white;
+    -moz-box-shadow: 0px 1px 5px #666;
+    -webkit-box-shadow: 0px 1px 5px #666;
+    box-shadow: 0px 1px 5px #666;
+}
+
+.content-left-nav li {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.content-left-nav li.nav-li1 a {
+    background: url(../img/jh_nav1.png) no-repeat -1px 0 !important;
+    text-indent: -99999px;
+    height: 83px;
+    display: inline-block;
+    width: 225px;
+}
+
+.content-left-nav li.nav-li2 a {
+    background: url(../img/jh_nav1.png) no-repeat -1px -95px !important;
+    text-indent: -99999px;
+    height: 83px;
+    display: inline-block;
+    width: 225px;
+}
+
+.nav-tel-title {
+    display: block;
+    width: 226px;
+    height: 83px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(../img/jh_tel.png) no-repeat center !important;
+}
+
+.nav-tel-info {
+    width: 223px;
+    height: 80px;
+    border: 1px solid #666;
+    border-radius: 0 0 6px 6px;
+    padding: 10px 0 0 0;
+}
+
+.nav-tel-info li {
+    margin: 0 0 0 10%;
+    color: #CC0000;
+    font-size: 12px;
+}
+
+.content-left-nav li.nav-li1 a.active {
+    background: url(../img/jh_nav2.png) no-repeat -1px 0 !important;
+}
+
+.content-left-nav li.nav-li2 a.active {
+    background: url(../img/jh_nav2.png) no-repeat -1px -95px !important;
+}
+
+.content-right-con {
+    float: right;
+    width: 710px;
+    min-height: 550px;
+    background: white;
+    -moz-box-shadow: 0px 1px 5px #666;
+    -webkit-box-shadow: 0px 1px 5px #666;
+    box-shadow: 0px 1px 5px #666;
+    font-size: 14px;
+}
+
+.con-1, .con-2 {
+    padding: 0 15px;
+}
+
+.con-1 h3, .con-2 h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #0171c1;
+}
+
+.con-1 p.red, .con-1 ul.red li {
+    color: #CC0000;
+}
+
+.con-2 img {
+    display: inline-block;
+    width: 75%;
+}
+
+footer {
+    width: 100%;
+    height: 65px;
+    margin-top: 15px;
+    background: rgb(46, 42, 49);
+    font-size: 12px;
+    position: relative;
+}
+
+footer div.f_content {
+    color: white;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.f_content span {
+    display: block;
+    margin-top: 10px;
+}
+
