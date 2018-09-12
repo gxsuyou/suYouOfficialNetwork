@@ -104,20 +104,19 @@ a {
     margin-top: 10px;
 }
 
-.content-left-nav li.nav-li1 a {
-    background: url(../img/jh_nav1.png) no-repeat -1px 0 !important;
+.content-left-nav li.nav-list a {
     text-indent: -99999px;
     height: 83px;
     display: inline-block;
     width: 225px;
 }
 
+.content-left-nav li.nav-li1 a {
+    background: url(../img/jh_nav1.png) no-repeat -1px 0 !important;
+}
+
 .content-left-nav li.nav-li2 a {
     background: url(../img/jh_nav1.png) no-repeat -1px -95px !important;
-    text-indent: -99999px;
-    height: 83px;
-    display: inline-block;
-    width: 225px;
 }
 
 .nav-tel-title {
@@ -143,11 +142,13 @@ a {
     font-size: 12px;
 }
 
-.content-left-nav li.nav-li1 a.active, .content-left-nav li.nav-li1 a:hover {
+.content-left-nav li.nav-li1 a.active,
+.content-left-nav li.nav-li1 a:hover {
     background: url(../img/jh_nav2.png) no-repeat -1px 0 !important;
 }
 
-.content-left-nav li.nav-li2 a.active, .content-left-nav li.nav-li2 a:hover {
+.content-left-nav li.nav-li2 a.active,
+.content-left-nav li.nav-li2 a:hover {
     background: url(../img/jh_nav2.png) no-repeat -1px -95px !important;
 }
 
@@ -166,13 +167,16 @@ a {
     padding: 0 15px;
 }
 
-.con-0 h3, .con-1 h3, .con-2 h3 {
+.con-0 h3,
+.con-1 h3,
+.con-2 h3 {
     text-align: center;
     font-size: 24px;
     color: #0171c1;
 }
 
-.con-1 p.red, .con-1 ul.red li {
+.con-1 p.red,
+.con-1 ul.red li {
     color: #CC0000;
 }
 
