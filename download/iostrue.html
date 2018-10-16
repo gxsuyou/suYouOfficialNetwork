@@ -10,7 +10,7 @@
 <body>
 <div class="iostrue_head">
   <div class="iostrue_back">
-    <
+
   </div>
 </div>
 <div class="iostrue_content">
@@ -43,6 +43,7 @@
   立即信任
 </div>
 <script type="text/javascript">
+
   var  backButton= document.querySelector(".iostrue_back")
   var  toTrue= document.querySelector(".toTrue")
    backButton.addEventListener("touchstart",function(){
@@ -51,6 +52,13 @@
    toTrue.addEventListener("touchstart",function(){
       location.href="embedded.mobileprovision"
    },false)
+
+   var userAgent = navigator.userAgent;
+
+   if(userAgent.indexOf("Safari")==-1) {
+     // return "Safari";
+     toTrue.style.display="none"
+   }
 </script>
 </body>
 </html>
