@@ -8,6 +8,24 @@
   <title>稣游IOS下载页面</title>
 </head>
 <body>
+  <div class="iosTrue">
+    <div class="iosTrue_info">
+      <img src="img/oneicon.png" alt="">
+      <div style="width:80%;margin-left:0.3rem;line-height:20px;">
+        <div class="" style="display:flex;justify-content: space-between;">
+          <span>首次打开需要信任描述文件</span>
+          <span style="color:#fb4748;">详细教程 >></span>
+        </div>
+        <div style="white-space:nowrap;" >
+            证书名称：
+            <span style="text-decoration:underline;">Chonging Junhan Technology.....</span>
+        </div>
+      </div>
+    </div>
+     <div class="iosTrue_button">
+       立即信任
+     </div>
+  </div>
   <div class="main_wrap">
     <div class="ios_left"></div>
     <div class="ios_bottom"></div>
@@ -91,5 +109,10 @@
   }
  db.addEventListener("touchstart",download,false);
   document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
+
+ var iosTrue_button=document.querySelector(".iosTrue_button")
+ iosTrue_button.addEventListener("touchstart",function(){
+  location.href="iostrue.html"
+ },false)
 </script>
 </html>

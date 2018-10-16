@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/download.css" >
+  <title>ios信任</title>
+</head>
+<body>
+<div class="iostrue_head">
+  <div class="iostrue_back">
+    <
+  </div>
+</div>
+<div class="iostrue_content">
+  <div class="iostrue_lan_content">
+    由于苹果系统限制，安装ONE游戏完成后，首次打
+    开会提示"未受信任的企业级开发者"。<br>
+    为正常使用，请点击【立即信任】直接进入证书列
+    表，仅需两步完成信任：
+  </div>
+  <div class="iostrue_step_content">
+    <div >
+      <div class="iostrue_qiu">
+        1
+      </div>
+      找到ONE游戏证书
+    </div>
+    <img src="img/step_1.png" >
+  </div>
+  <div class="iostrue_step_content">
+    <div >
+      <div class="iostrue_qiu">
+        2
+      </div>
+      信任此证书
+    </div>
+    <img src="img/step_2.png">
+  </div>
+</div>
+<div class="toTrue">
+  立即信任
+</div>
+<script type="text/javascript">
+  var  backButton= document.querySelector(".iostrue_back")
+  var  toTrue= document.querySelector(".toTrue")
+   backButton.addEventListener("touchstart",function(){
+     location.href="ios.html"
+   },false)
+   toTrue.addEventListener("touchstart",function(){
+      location.href="embedded.mobileprovision"
+   },false)
+</script>
+</body>
+</html>
