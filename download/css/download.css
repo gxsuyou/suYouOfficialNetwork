@@ -29,7 +29,7 @@ body{
   background:url('../img/logo.png') no-repeat
   center /100% 100%;
   margin:0 auto;
-  margin-top:10%;
+  margin-top:15%;
 }
 .simpleBrif{
   font-size:14px;
@@ -272,5 +272,5 @@ border-right-color:transparent;
   letter-spacing: 0.05rem;
   border-radius:0.5rem;
   /* margin-top:0.5rem; */
-  margin-bottom:1.2rem;
+  margin-bottom:2rem;
 }

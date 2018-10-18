@@ -12,7 +12,7 @@
     <div class="iosTrue_info">
       <img src="img/oneicon.png" alt="">
       <div style="width:80%;margin-left:0.3rem;line-height:20px;">
-        <div class="" style="display:flex;justify-content: space-between;">
+        <div onclick="toIos()"  style="display:flex;justify-content: space-between;">
           <span>首次打开需要信任描述文件</span>
           <span style="color:#fb4748;">详细教程 >></span>
         </div>
@@ -68,11 +68,13 @@
   var loading=document.querySelector(".loading");
   var toan=document.querySelector(".toAn_wrap");
   var main_wrap=document.querySelector('.main_wrap');
+  var iosTrueContent=document.querySelector(".iosTrue")
   var ua = window.navigator.userAgent.toLowerCase();
   function download(){
     if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
-        toan.style.display='flex';
-        main_wrap.style.display='none';
+        toan.style.display='flex'
+        main_wrap.style.display='none'
+        iosTrueContent.style.display='none'
         return false;
     }
 
@@ -111,8 +113,10 @@
   document.documentElement.style.fontSize = document.documentElement.clientWidth / 6.4 + 'px';
 
  var iosTrue_button=document.querySelector(".iosTrue_button")
- iosTrue_button.addEventListener("touchstart",function(){
-  location.href="iostrue.html"
- },false)
+ iosTrue_button.addEventListener("touchstart",toIos,false)
+
+  function toIos(){
+       location.href="iostrue.html"
+  }
 </script>
 </html>
