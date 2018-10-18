@@ -70,11 +70,14 @@
   var main_wrap=document.querySelector('.main_wrap');
   var iosTrueContent=document.querySelector(".iosTrue")
   var ua = window.navigator.userAgent.toLowerCase();
+
+  if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
+    iosTrueContent.style.display='none'
+  }
   function download(){
     if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
         toan.style.display='flex'
         main_wrap.style.display='none'
-        iosTrueContent.style.display='none'
         return false;
     }
 
