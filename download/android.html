@@ -14,8 +14,8 @@
     <div class="main" style='top:17%;'>
       <div class="logo" style='background:url(./img/logo_android.png) no-repeat center /100% 100%;margin-top:0px;'></div>
       <div class="simpleBrif" style='margin-top:8%;'>
-        <div>1.0.56 - 11.9 MB</div>
-        <div>更新于: 2018-10-23</div>
+        <div class="appInfo"></div>
+        <div class="appTime"></div>
       </div>
       <div class="downloadButton">
          下载安装
@@ -43,6 +43,18 @@
   var toan=document.querySelector(".toAn_wrap");
   var main_wrap=document.querySelector('.main_wrap');
   var ua = window.navigator.userAgent.toLowerCase();
+  var appInfo=document.querySelector(".appInfo")
+  var appTime=document.querySelector(".appTime")
+  ajax({
+   type:"get",
+   url:"https://admin.oneyouxi.com.cn/common/getAORIVersion?type=APP_SET&platform=Android",
+   dataType:"json",
+   data:{type:"APP_SET",platform:"Android"},
+   success:function(result){
+     appInfo.innerText=result.setVal.Version+" - "+result.setVal.appSize+" MB";
+     appTime.innerText="更新于: "+result.setVal.setTime;
+   }
+  })
   function download(){
     if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
         toan.style.display='flex';

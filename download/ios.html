@@ -32,8 +32,10 @@
     <div class="main">
       <div class="logo"></div>
       <div class="simpleBrif">
-        <div>1.0.48 - 20.3 MB</div>
-        <div>更新于: 2018-10-23</div>
+        <div class="appInfo"></div>
+        <div
+        class="appTime"
+        ></div>
       </div>
       <div class="downloadButton">
          下载安装
@@ -74,6 +76,20 @@
   if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
     iosTrueContent.style.display='none'
   }
+  var appInfo=document.querySelector(".appInfo")
+  var appTime=document.querySelector(".appTime")
+  ajax({
+   type:"get",
+   url:"https://admin.oneyouxi.com.cn/common/getAORIVersion?type=APP_SET&platform=IOS",
+   dataType:"json",
+   data:{type:"APP_SET",platform:"IOS"},
+   success:function(result){
+     appInfo.innerText=result.setVal.Version+" - "+result.setVal.appSize+" MB";
+     appTime.innerText="更新于: "+result.setVal.setTime;
+   }
+  })
+
+
   function download(){
     if(ua.match(/MicroMessenger/i) == 'micromessenger' || ua.match(/_SQ_/i) == '_sq_'){
         toan.style.display='flex'
